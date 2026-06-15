@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    justify-content: center;  /* horizontal center */
+    align-items: center;      /* vertical center */
+    height: 100vh;            /* full screen height */
+    margin: 0;
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 320px;
+    max-height: 320px;
+}
+.box {
+    border: solid black 1px;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+}
