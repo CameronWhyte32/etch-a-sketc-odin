@@ -36,7 +36,8 @@ function createGrid(size) {
         
 gridContainer.addEventListener("mouseover", (e) => {
     if (e.target.classList.contains("box")) {
-        e.target.classList.add("hoverOver") 
+        const randomColor = Math.floor(Math.random()*16777215).toString(16);
+        e.target.style.backgroundColor = "#" + randomColor;
     }
 })
 
@@ -54,6 +55,8 @@ function resetPage() {
 }
 
 
-
-
 createGrid(16);
+
+
+
+genNew.addEventListener("click", setBg);
